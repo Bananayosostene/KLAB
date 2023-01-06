@@ -1,0 +1,39 @@
+:root {
+  --main-color: #0d0c2d;
+  --main-modal: #19164f;
+
+  --text-color: #ffffff;
+  --text-main-color: rgb(226, 124, 7);
+}
+.headeer{
+margin-left: 19%;
+margin-right: 19%;
+margin-top: 1.5rem;
+border-bottom:  1px solid white;
+}
+.headeer .get{
+ color: var(--text-color);
+}
+.headeer span{
+ color: var(--text-main-color) ;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.divs{
+    width: 20%;
+    height: 20rem;
+    border-radius: 10px;
+    background-image: url(/img/myfirstsite.png);
+    background-size: cover;
+}
+.divss{
+    color: red;
+    
+}
+

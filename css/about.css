@@ -1,0 +1,249 @@
+:root {
+  --main-color: #0d0c2d;
+  --main-modal: #19164f;
+
+  --text-color: #ffffff;
+  --text-main-color: rgb(226, 124, 7);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+
+section div {
+  flex-basis: 50%;
+}
+
+section .img {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+section .img img {
+  width: 61%;
+  border-radius: 10px;
+  /* object-fit: cover; */
+}
+section .text {
+  width: 50%;
+  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+section .text h2 {
+  font-size: 3rem;
+  color: white;
+}
+section .text h2 span {
+  color: var(--text-main-color);
+}
+
+section .text h6 {
+  color: var(--text-color);
+  font-size: x-large;
+}
+
+section .text p {
+  color: rgb(206, 196, 178);
+  font-size: small;
+  line-height: 1.4rem;
+}
+
+section button {
+  background-color: rgb(226, 124, 7);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 100vw;
+  color: white;
+  width: 30%;
+}
+.active {
+  color: rgb(226, 124, 7);
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.modal {
+  width: 60%;
+  background-color: var(--main-modal);
+  display: flex;
+  height: 70vh;
+  color: white;
+  margin-bottom: 5rem;
+  justify-content: flex-start;
+  position: absolute;
+  top: 25%;
+  display: none;
+  bottom: 25%;
+  align-items: center;
+}
+.close {
+  background-color: rgb(226, 124, 7);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  float: right;
+  padding: 0.5rem;
+  margin-top: -3rem;
+}
+
+.modal .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-right: 1px solid white;
+  flex-basis: 40%;
+}
+
+.modal .left ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .content {
+  flex-basis: 60%;
+  padding: 1rem;
+}
+.services {
+  padding: 1rem 0;
+}
+h4 {
+  padding: 2rem 0;
+  color: rgb(226, 124, 7);
+}
+
+.modal .content .div {
+  overflow: auto;
+  height: 55vh;
+}
+.modal .content div::-webkit-scrollbar {
+  display: none;
+}
+
+.modal img {
+  height: 8rem;
+  border-radius: 50%;
+}
+.modal li {
+  font-size: small;
+}
+
+.languages .jas {
+  display: flex;
+  flex-direction: column;
+}
+.languages .js {
+  width: 25%;
+}
+.modal ul {
+  display: block;
+}
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgb(226, 124, 7);
+  width: 250px;
+  height: 6px;
+  border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+}
+progress {
+  accent-color: red;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+.education .div {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  padding: 1rem;
+  width: 100%;
+}
+.education .div div {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 900px) {
+  .text .learn {
+    width:100%;
+  }
+  .main {
+  width: 100%;
+  height: 80rem;
+}
+}
+
+@media (max-width: 760px) {
+  section {
+    flex-direction: column;
+  }
+
+  section div {
+    flex-basis: 100%;
+  }
+
+  section div {
+    flex-basis: 100%;
+  }
+  section .text {
+    width: 100%;
+    padding: 4rem;
+  }
+  section {
+    height: 100%;
+  }
+  section .img {
+    justify-content: center;
+  }
+  section .text h2 {
+    font-size: 2rem;
+  }
+  section button {
+    width: 60%;
+  }
+  .modal {
+    width: 80%;
+    flex-direction: column;
+    height: 140%;
+  }
+  .modal .left {
+    border: none;
+  }
+  .c2 {
+    display: none;
+  }
+  .modal .content .div {
+    overflow: hidden;
+    height: 100%;
+  }
+}
