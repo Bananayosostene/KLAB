@@ -12,7 +12,7 @@
     <div>
       <header>
         <div class="logo">
-          <h1>Sostene</h1>
+          <h1>SBA</h1>
         </div>
 
         <ul class="list">
@@ -29,7 +29,7 @@
           <img src="/img/sostene.jpeg" alt="" srcset="" />
         </div>
         <div class="text">
-          <h2>Bananayo <span> Sostene </span></h2>
+          <h2>Bananayo <span> sostene </span></h2>
           <h6>Creative developer</h6>
           <p>
             My name is Bananyo Sostene. I am a graphic designer, and I'm very
@@ -80,15 +80,48 @@
                   <li>Shared Web Hosting</li>
                 </ul>
               </div>
+              <div class="services">
+                <h4>Programming Skills</h4>
+                <ul>
+                  <li>WordPress</li>
+                  <li>JavaScrip</li>
+                  <li>Angular</li>
+                </ul>
+              </div>
+              <div class="services">
+                <h4>Language Skills</h4>
+                <ul>
+                  <li>English 80%</li>
+                  <li>Kiswahili 50%</li>
+                  <li>Kinyarwaanda 90%</li>
+                </ul>
+              </div>
               <div class="languages">
                 <h4>Languages</h4>
                 <div class="jas">
                   <span> JavaScript</span>
-                  <progress max="100" value="80"></progress>
+                  <!-- <progress max="100" value="80"></progress> -->
                 </div>
                 <div></div>
               </div>
 
+
+              <div class="circle">
+                <div class="containerr">
+                  <div class="box">
+                    <div class="chart" data-percent="90">90%</div>
+                    <h2>HTML</h2>
+                  </div>
+                  <div class="box">
+                    <div class="chart" data-percent="72">72%</div>
+                    <h2>CSS</h2>
+                  </div>
+                  <div class="box">
+                    <div class="chart" data-percent="81">81%</div>
+                    <h2>JAVASCRIPT</h2>
+                  </div>
+                </div>
+              </div>
               <div class="education">
                 <h4>Education</h4>
 
@@ -96,14 +129,34 @@
                   <span>2020-2023</span>
                   <div><span>UR</span><span>bsc</span></div>
                 </div>
-                <div></div>
-                <div></div>
+                <div class="div">
+                  <span>2020-2023</span>
+                  <div><span>UR</span><span>bsc</span></div>
+                </div>
+                <div class="div">
+                  <span>2020-2023</span>
+                  <div><span>UR</span><span>bsc</span></div>         
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+   <script type="text/javascript">
+  $(function() {
+  $('.chart').easyPieChart({
+    size: 160,
+    barColor: "#36e617",
+    scaleLength: 0,
+    lineWidth: 15,
+    trackColor: "#525151",
+    lineCap: "circle",
+    animate: 2000,
+  });
+});
+</script>
+
     <script src="/js/script.js"></script>
   </body>
 </html>

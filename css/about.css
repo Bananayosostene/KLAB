@@ -178,8 +178,8 @@ progress {
 .education {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0;
-  justify-content: space-between;
+  /* padding: 1rem 0; */
+  /* justify-content: space-between; */
 }
 
 .education .div {
@@ -246,4 +246,72 @@ progress {
     overflow: hidden;
     height: 100%;
   }
+}
+/* bbbbbbbbbbb */
+  .circle {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: #0d0c2d;
+ }  
+
+.containerr {
+  display: grid;
+  grid-template-columns: repeat(1, 160px);
+  grid-gap: 80px;
+  background: #0d0c2d;
+  box-shadow: -5px -5px 8px rgba(94, 104, 121, 0.288),
+              4px 4px 6px rgba(94, 104, 121, 0.288);
+  padding: 60px;
+  margin: auto 0;
+}
+
+@media (min-width: 420px) and (max-width: 659px) {
+  .container {
+    grid-template-columns: repeat(2, 160px);
+  }
+}
+
+@media (min-width: 660px) and (max-width: 899px) {
+  .container {
+    grid-template-columns: repeat(3, 160px);
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(3, 160px);
+  }
+}
+
+.container .box {
+  width: 50%;
+}
+
+.container .box h2 {
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+
+.container .box .chart {
+  position: relative;
+  width: 20%;
+  height: 20%;
+  text-align: center;
+  font-size: 10px;
+  line-height: 60px;
+  height: 60px;
+  color: #fff;
+}
+
+.container .box canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  width: 40%;
 }

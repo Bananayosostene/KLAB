@@ -68,7 +68,9 @@ form textarea {
   background-color: #19164f;
   border: none;
 }
-
+form p {
+  color: red;
+}
 form button {
   background-color: var(--text-main-color);
   padding: 1rem;
@@ -79,7 +81,6 @@ form button {
   color: none;
   margin: 1rem;
 }
-
 @media (max-width: 760px) {
   footer {
     flex-direction: column;
