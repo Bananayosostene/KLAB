@@ -36,4 +36,17 @@ border-bottom:  1px solid white;
     color: red;
     
 }
+@media (max-width: 760px) {
+.section{
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.divs{
+    width: 80%;
+    height: 20rem;
+    border-radius: 5px;
+}
+
+}
 
