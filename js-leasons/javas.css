@@ -1,0 +1,31 @@
+body{
+    background-color: #0d0c2d;
+    /* text-align: center; */
+    color: white;
+}
+#div1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 25px;
+}
+p{
+    font-size: 25px;
+}
+button{
+    background-color: rgb(156, 21, 21);
+    width: 10em;
+    height: 3em;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+#add-el{
+    background-color: yellow;
+    border: 3px solid red;
+}
+#add-el:hover{
+    transform: scale(1.01);
+}

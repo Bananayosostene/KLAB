@@ -21,7 +21,7 @@
         <li><a href="/html/blog.html">Blogs</a></li>
         <li><a class="ac" href="/html/contact.html">Contact</a></li>
       </ul>
-      <div class="burger">Menu</div>
+      <div> <img class="burger" src="/img/menu-icone.png" alt=""></div>
     </header>
 
     <footer>
@@ -31,17 +31,21 @@
           <span> touch </span>
         </h1>
         <div class="content">
-          <div>+250 788 724 867</div>
-          <div>+250 722 113 769</div>
+          <address>
+          <div> <img class="contact-icon" src="/img/contact-icon.png" alt=""> +250 788 724 867 </div>
+          <div><img class="contact-icon" src="/img/contact-icon.png" alt=""> +250 722 113 769</div>
           <div>sbananayo98@gmail.com</div>
           <div>@facebookBN</div>
+          </address>
         </div>
       </div>
       <form name="form1" action="">
         <input type="text"  name="name" placeholder="name" id="name"/>
-        <p id="demo"></p>
-        <input type="text" name="email" placeholder="email" id="email"/>
-        <textarea name="message" placeholder="message" id="area"> </textarea>
+        <p id="name-p"></p>
+        <input type="text"  name="email" placeholder="email" id="email"/>
+        <p id="email-p"></p>
+        <textarea name="message" placeholder="Write message" id="area"> </textarea>
+        <p id="area-p"></p>
         <button type="button" onclick="myFunction()">Send message</button>
       </form>
     </footer>

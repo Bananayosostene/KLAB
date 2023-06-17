@@ -10,34 +10,36 @@
     <link rel="stylesheet" href="/css/contact.css" />
   </head>
   <style>
-    .divsss{
-    width: 20%;
-    height: 20rem;
-    border-radius: 10px;
-    /* background-color: white; */
-    background-size: cover;
+    .divsss {
+      width: 20%;
+      height: 20rem;
+      border-radius: 10px;
+      background-size: cover;
     }
     img {
       width: 20rem;
       height: 20rem;
+      border-radius: 5px;
+    }
+    figcaption{
+      color: white;
+    
     }
     @media (max-width: 760px) {
-img{
-    width: 80%;
-    height: 10rem;
-    border-radius: 2.5px;
-    flex-direction: column;
-    /* margin-top: 2rem; */
-}
-  .divsss{
-    width: 80%;
-    height: 10rem;
-    border-radius: 2.5px;
-    /* background-color: white; */
-    background-size: cover;
+      img {
+        width: 80%;
+        height: 10rem;
+        border-radius: 2.5px;
+        flex-direction: column;
+      }
+      .divsss {
+        width: 80%;
+        height: 10rem;
+        border-radius: 2.5px;
+        background-size: cover;
+        flex-direction: column;
+      }
     }
-
-}
   </style>
   <body>
     <header>
@@ -49,32 +51,32 @@ img{
         <li><a href="/index.html">Home </a></li>
         <li><a href="/html/about.html">About</a></li>
         <li><a href="/html/portfolio.html">Portfolio</a></li>
-        <li><a class="ac"  href="/html/blog.html">Blogs</a></li>
+        <li><a class="ac" href="/html/blog.html">Blogs</a></li>
         <li><a href="/html/contact.html">Contact</a></li>
       </ul>
-      <div class="burger">Menu</div>
+      <div> <img class="burger" src="/img/menu-icone.png" alt=""></div>
     </header>
-      <div class="headeer">
-        <h1 class="get">Get in<span> touch </span>
-        </h1>
-        </div>
-        <section class="section">
-            <div class="divsss">
-              <img src="/img/developer.png" alt="">
-           
-                
-            </div>
-              <div class="divsss">
-
-          <img src="/img/online.png" alt="">
-                
-            </div>
-              <div class="divsss">
-            
-          <img src="/img/woman.png" alt="">
-                
-            </div>
-        </section>
-     <script src="/js/script.js"></script>
+    <div class="headeer">
+      <h1 class="get">Get in<span> touch </span></h1>
+    </div>
+    <section class="section">
+      <div class="divsss">
+        <img src="/img/developer.png" alt="" />
+        <figcaption>hello</figcaption>
+      </div>
+      <div class="divsss">
+        <img src="/img/online.png" alt="" />
+        <figcaption>hello</figcaption>
+      </div>
+      <div class="divsss">
+        <img src="/img/woman.png" alt="cancunvocation" title="Creative Designer">
+        <figcaption>
+          <address>
+          Lorem ipsum 
+          </address>
+        </figcaption>
+      </div>
+    </section>
+    <script src="/js/script.js"></script>
   </body>
 </html>

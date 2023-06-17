@@ -74,7 +74,13 @@ main button {
 .ac {
   color: rgb(226, 124, 7);
 }
-.burger,
+.burger{
+  display: none;
+  width: 30px;
+  height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+}
 .clos {
   display: none;
   cursor: pointer;
@@ -96,14 +102,17 @@ main button {
     position: absolute;
     left: 0;
     top: 0;
-    bottom: 30%;
+    bottom: 55%;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    gap: 3rem;
-    width: 40%;
+    gap: 2rem;
+    width: 15%;
+    margin-top: 35px;
+    margin-left: 10px;
     background-color: var(--main-color);
-    border: 1px solid white;
+    border: 2px solid white;
+    border-radius: 10px;
   }
   .burger {
     display: flex;

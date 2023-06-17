@@ -51,7 +51,6 @@ section .text h2 {
 section .text h2 span {
   color: var(--text-main-color);
 }
-
 section .text h6 {
   color: var(--text-color);
   font-size: x-large;
@@ -86,7 +85,7 @@ section button {
   width: 60%;
   background-color: var(--main-modal);
   display: flex;
-  height: 70vh;
+  height: 70%;
   color: white;
   margin-bottom: 5rem;
   justify-content: flex-start;
@@ -97,27 +96,36 @@ section button {
   align-items: center;
 }
 .close {
-  background-color: rgb(226, 124, 7);
-  border-radius: 50%;
+  background-color: rgb(207, 4, 4);
+  width: 2rem;
+  height: 2rem;
+  /* border-radius: 50%; */
+  justify-content: center;
+  align-items: center;
   color: white;
   cursor: pointer;
   float: right;
-  padding: 0.5rem;
-  margin-top: -3rem;
+  padding: 0.6rem;
+  margin-top: -3.3rem;
+  margin-right: -1rem ;
 }
 
 .modal .left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   border-right: 1px solid white;
   flex-basis: 40%;
 }
 
 .modal .left ul {
+  list-style: none;
   display: flex;
   flex-direction: column;
+}
+.modal .left ul li{
+  /* list-style: none; */
 }
 
 .modal .content {
@@ -147,8 +155,12 @@ h4 {
 .modal li {
   font-size: small;
 }
+.languages{
+  /* padding: 0px; */
+}
 
 .languages .jas {
+  padding: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -174,28 +186,149 @@ progress[value]::-webkit-progress-bar {
 progress {
   accent-color: red;
 }
+span .prog-1{
+  margin-left: 170px;
+}
+span .prog-2{
+  margin-left: 180px;
+}
+span .prog-3{
+  margin-left: 140px;
+}
+/* hano mba ntangiye class ya all */
+.all{
+  /* border: 5px solid red; */
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.all .card{
+  /* position: relative; */
+  /* background-color: red; */
+  width: 130px;
+  height: 130px;
+  display: flex;
+  /* border: 1px solid; */
+}
+.all .card .percent{
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+.all .card .percent svg{
+  position: relative;
+  width: 130px;
+  height: 130px;
+  transform: rotate(270deg);
+}
+.all .card .percent svg circle{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 2;
+  stroke: white;
+  transform: translate(5px, 5px);
+}
+.all .card .percent svg circle:nth-child(2){
+  stroke: var(--clr);
+  stroke-dasharray: 390;
+  stroke-dashoffset: calc(440 - (440 * var(--num))/100);
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2s;
+}
+@keyframes fadeIn{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+.dot{
+  position: absolute;
+  inset: 5px;
+  z-index: 10;
+  transform: rotate(3.6deg * var(--num));
+  animation: animatedot 2s linear forwards;
+}
+.number{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   animation: fadeIn 1s linear forwards;
+  animation-delay: 2s;
+}
+.number .perc{
+  justify-content: center;
+  align-items: center;
+}
+.number .perc span{
+  font-weight: 300;
+  font-size: 0.5em;
+}
+.number  p{
+font-weight: 300;
+font-size: 0.75em;
+letter-spacing: 2px;
+line-height: 2px;
+margin-top: 5px;
+color: rgba(255, 255, 255,0.75 );
+
+
+}
+@keyframes animatedot{
+  0%{transform: rotate(0deg);}
+   100%{transform: rotate(calc(3.6deg * var(--num)));}
+}
+.dot::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: rotateX(-50%);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--clr),
+  0 0 30px var(--clr);
+  width: 10px;
+  height: 10px;
+  background: var(--clr);
+}
+.all .card .percent svg circle:nth-child(3){
+  stroke: var(--clr);
+  stroke-dasharray: 330;
+  stroke-dashoffset: 30;
+}
+.all .card .percent svg circle:nth-child(4){
+  stroke: var(--clr);
+  stroke-dasharray: 330;
+  stroke-dashoffset: 30;
+}
 
 .education {
   display: flex;
   flex-direction: column;
-  /* padding: 1rem 0; */
-  /* justify-content: space-between; */
 }
 
-.education .div {
+.education .di {
   display: flex;
   justify-content: space-between;
-  height: 3rem;
-  padding: 1rem;
+  padding: 10px;
   width: 100%;
 }
-.education .div div {
+.education{
+gap: 2rem;
+}
+.education .di div{
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 @media (max-width: 900px) {
   .text .learn {
-    width:100%;
+    width:25%;
+    padding: 10px;
   }
   .main {
   width: 100%;
@@ -216,6 +349,7 @@ progress {
     flex-basis: 100%;
   }
   section .text {
+    margin-left: 90px;
     width: 100%;
     padding: 4rem;
   }
@@ -232,86 +366,35 @@ progress {
     width: 60%;
   }
   .modal {
+  background-color: var(--main-modal);
     width: 80%;
+    gap: 0;
     flex-direction: column;
-    height: 140%;
+    height: 240%;
   }
-  .modal .left {
+  .modal .left{
+    margin-left: -19rem;
     border: none;
+    margin-top: -8rem;
   }
-  .c2 {
-    display: none;
+  .modal {
+    border: none;
+    background-color: var(--main-color);
+  }
+  .close {
+
+  margin-top: -110%;
+  margin-right: -15%;
   }
   .modal .content .div {
     overflow: hidden;
     height: 100%;
   }
 }
-/* bbbbbbbbbbb */
-  .circle {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  background: #0d0c2d;
- }  
-
-.containerr {
-  display: grid;
-  grid-template-columns: repeat(1, 160px);
-  grid-gap: 80px;
-  background: #0d0c2d;
-  box-shadow: -5px -5px 8px rgba(94, 104, 121, 0.288),
-              4px 4px 6px rgba(94, 104, 121, 0.288);
-  padding: 60px;
-  margin: auto 0;
-}
-
-@media (min-width: 420px) and (max-width: 659px) {
-  .container {
-    grid-template-columns: repeat(2, 160px);
+@media (max-width: 560px) {
+   .close {
+  margin-top: -115%;
+  margin-right: -15%;
   }
 }
 
-@media (min-width: 660px) and (max-width: 899px) {
-  .container {
-    grid-template-columns: repeat(3, 160px);
-  }
-}
-
-@media (min-width: 900px) {
-  .container {
-    grid-template-columns: repeat(3, 160px);
-  }
-}
-
-.container .box {
-  width: 50%;
-}
-
-.container .box h2 {
-  display: block;
-  text-align: center;
-  color: #fff;
-}
-
-.container .box .chart {
-  position: relative;
-  width: 20%;
-  height: 20%;
-  text-align: center;
-  font-size: 10px;
-  line-height: 60px;
-  height: 60px;
-  color: #fff;
-}
-
-.container .box canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40%;
-  width: 40%;
-}
